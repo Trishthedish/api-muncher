@@ -18,3 +18,7 @@
 
 # please ignore all the secrets!
 .env
+
+
+# ignore ds_store
+.DS_Store
