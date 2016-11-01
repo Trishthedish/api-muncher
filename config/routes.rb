@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'recipes/index'
+
+  get 'recipes/create'
+
+  get 'recipes/new'
+
   root to: "homepages#index"
 
   get '/new/:name/:id' => 'homepages#new', as: 'new_recipe'
