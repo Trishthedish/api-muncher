@@ -1,10 +1,10 @@
 class Recipe
-  att_reader :url, :name, :photo
+  attr_reader :url, :name, :photo
 
-  def initilize(url, name, photo)
+  def initialize(url, name, photo)
     @url = url
     @name = name
     @photo = photo
   end
-  
+
 end

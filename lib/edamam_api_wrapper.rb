@@ -29,7 +29,5 @@ class Edamam_Api_Wrapper
 # https://api.edamam.com/search?q=chicken&app_id=f2222748&app_key=776b85ac416c71fed03e509eafa77715
 
 
-  end
-
 
 end
