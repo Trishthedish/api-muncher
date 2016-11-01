@@ -1,6 +1,6 @@
 class HomepagesController < ApplicationController
   def index
-    @search_results = Edamam_Api_Wrapper.search_recipes("chicken")
+    @search_results = Edamam_Api_Wrapper.search_recipes(@search_term)
   end
 
   def create

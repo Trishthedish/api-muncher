@@ -1,0 +1,14 @@
+<h1>These are the Recipes you seek!</h1>
+
+  <div class="callout primary">
+    <div class="row column">
+      <h1></h1>
+      <p class="lead">YOU Searched for <span class="colorful_text"><%= @search_term%></span>, and we found<span class="colorful_text"> <%= @search_results.length%></span> recipe(s) that match your query. </p>
+    </div>
+  </div>
+  <hr>
+    <center>
+      <%@search_results.each do |search| %>
+        <%=link_to image_tag(search.photo), {action: 'show', controller: 'recipes'} %>
+      <% end %>
+    </center>

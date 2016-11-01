@@ -21,7 +21,8 @@ class Edamam_Api_Wrapper
       url = recipe["url"]
       name = recipe["label"]
       photo = recipe["image"]
-      search_results << Recipe.new(url, name, photo)
+      ingredientLines = recipe["ingredientLines"]
+      search_results << Recipe.new(url, name, photo, ingredientLines)
     end
     search_results
   end
