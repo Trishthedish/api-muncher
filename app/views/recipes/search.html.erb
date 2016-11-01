@@ -9,6 +9,10 @@
   <hr>
     <center>
       <%@search_results.each do |search| %>
+
         <%=link_to image_tag(search.photo), {action: 'show', controller: 'recipes'} %>
+
+        <%=link_to image_tag(search.photo),show_recipes  %>
+
       <% end %>
     </center>
