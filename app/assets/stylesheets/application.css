@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+
+.colorful_text {
+  color: #E8179A;
+  font-weight: bolder;
+}

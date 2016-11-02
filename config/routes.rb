@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  # get 'recipes/index' => 'recipes#show', as: 'show_recipes'
+
+  get 'recipes/show/:id' => 'recipes#show', as: 'show_recipes'
+
+  get 'recipes/create'
+
+  get 'recipes/new'
+
   root to: "homepages#index"
 
   get '/new/:name/:id' => 'homepages#new', as: 'new_recipe'
@@ -6,6 +15,8 @@ Rails.application.routes.draw do
   get 'homepages/create'
 
   get 'homepages/new'
+
+  get 'recipes/search' => 'recipes#search', as: 'search_recipes'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
