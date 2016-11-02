@@ -14,11 +14,6 @@
  *= require_self
  */
 
- .imageContainer {
-   width: 200px;
-   height: 200px;
-   background-image: url(http://placehold.it/550x550)
- }
 
 .colorful_text {
   color: #E8179A;
