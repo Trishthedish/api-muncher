@@ -21,4 +21,12 @@ class RecipesController < ApplicationController
 
   end
 
+  def show
+    uri = params[:uri]
+    @recipe = Edamam_Api_Wrapper.get_recipe(uri)
+
+    render :show
+  end
+
+
 end
