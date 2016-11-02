@@ -1,16 +1,19 @@
-<h1>Recipe</h1>
-<p>If you're hungry and you know it, search for recipes. </p>
+<div class="home-hero">
 
 
-<div class="row">
-  <h3 class="headline small-4 small-centered columns">Find Your Recipe</h3>
-    <%= form_tag(search_recipes_path(), :method => "get") do %>
+  <h1>Api Muncher Main</h1>
+  <p>If you're hungry and you know it, search for recipes. </p>
 
-  <div class="row">
+
+
+
+
+
+    <h3>Find Your Recipe</h3>
+  <%= form_tag(search_recipes_path(), :method => "get") do %>
     <%= search_field_tag("query", nil, :placeholder => "search recipes", class: "large-2 small-centered columns")%>
-  </div>
-
       <%= submit_tag "Submit", :name => nil, class: 'button' %>
-
     <% end %>
+
+
 </div>
