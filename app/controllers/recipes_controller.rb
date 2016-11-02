@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
   def index
+    @search_results = Edamam_Api_Wrapper.search_recipes(@search_term)
   end
 
   def create
@@ -12,10 +13,12 @@ class RecipesController < ApplicationController
 
   def search
     # what is better string or symbol?
+
     @search_term = params[:query]
     @search_results = Edamam_Api_Wrapper.search_recipes(@search_term)
 
     render :search
+
   end
 
 end
