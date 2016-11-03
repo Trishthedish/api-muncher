@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   def index
-    @search_results = Edamam_Api_Wrapper.search_recipes(@search_term)
+    @search_results = Edamam_Api_Wrapperp.search_recipes(@search_term)
   end
 
   def create
@@ -15,7 +15,7 @@ class RecipesController < ApplicationController
     # what is better string or symbol?
 
     @search_term = params[:query]
-    @search_results = Edamam_Api_Wrapper.search_recipes(@search_term)
+    @search_results = Edamam_Api_Wrapper.search_recipes(@search_term).paginate(:page => params[:page], :per_page => 10)
 
     render :search
 

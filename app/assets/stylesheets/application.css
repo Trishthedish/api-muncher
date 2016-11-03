@@ -19,3 +19,9 @@
   color: #E8179A;
   font-weight: bolder;
 }
+
+
+.pagination a, .pagination button {
+  display: inline-block;
+  text-align: center;
+}
