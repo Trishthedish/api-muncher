@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   # get 'recipes/index' => 'recipes#show', as: 'show_recipes'
 
-  get 'recipes/show/:id' => 'recipes#show', as: 'show_recipes'
+  get 'recipes/show/*uri' => 'recipes#show', as: 'show_recipes', format: false
+
+  get 'recipe/show/*uri' => 'recipe#show', as: 'show_recipe', format: false
 
   get 'recipes/create'
 
