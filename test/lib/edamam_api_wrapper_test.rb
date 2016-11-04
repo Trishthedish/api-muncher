@@ -18,6 +18,19 @@ class Edamam_Api_WrapperTest < ActionController::TestCase
     end
   end
 
+  test "what happens if no input "
+
+
+
+  test "what happens when muliple words our entered."
+
+
+  test "what happens when you enter just spaces.sx"
+
+
+  
+
+
   # test "Retrieves nill when the token is wrong" do
   #   VCR.use_cassette("") do
   #     search_results = Edamam_Api_Wrapper.search_recipes ""
