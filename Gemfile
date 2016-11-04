@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'jquery-turbolinks'
 gem 'awesome_print'
 
+gem 'minitest-reporters'
+
 # The will_paginate gem modifies Collection of ActiveRecord in a way to implement pagination
 gem 'will_paginate'
 
@@ -49,6 +51,10 @@ group :development, :test do
 end
 
 group :development do
+# R is a tool that allows your tests to record HTTP interactions and replay them when necessary. By re-using these responses, VCR will improve stability and performance of your test suite.
+  gem 'minitest-vcr'
+  gem 'webmock'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
