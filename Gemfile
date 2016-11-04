@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'jquery-turbolinks'
 gem 'awesome_print'
 
+gem 'minitest-reporters'
+
 # The will_paginate gem modifies Collection of ActiveRecord in a way to implement pagination
 gem 'will_paginate'
 

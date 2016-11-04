@@ -1,6 +1,8 @@
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+require 'minitest/reporters'
+
 require 'vcr'
 require 'webmock/minitest'
 
@@ -10,6 +12,8 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  Minitest::Reporters.use!
+
   VCR.configure do |config|
     config.cassette_library_dir = 'test/cassettes' # folder where casettes will be located
     config.hook_into :webmock # tie into this other tool called webmock
@@ -18,8 +22,8 @@ class ActiveSupport::TestCase
       :match_requests_on => [:method, :uri, :body] # The http method, URI and body of a request all need to match
     }
     # Don't leave our Slack token lying around in a cassette file.
-    config.filter_sensitive_data("<SLACK_TOKEN>") do
-      ENV['SLACK_TOKEN']
-    end
+    # config.filter_sensitive_data("<SLACK_TOKEN>") do
+    #   ENV['SLACK_TOKEN']
+    # end
   end
 end

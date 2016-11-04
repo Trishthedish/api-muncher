@@ -8,7 +8,7 @@ class Edamam_Api_Wrapper
   APP_KEY = ENV["APP_KEY"]
 
   def self.search_recipes(search_term)
-    url = BASE_URL + "search" + "?q=#{search_term} + &app_id=#{APP_ID}&app_key=#{APP_KEY}" + "&from =0&to=1000"
+    url = BASE_URL + "search" + "?q=#{search_term} + &app_id=#{APP_ID}&app_key=#{APP_KEY}" + "&from=0&to=100"
 
 
 
