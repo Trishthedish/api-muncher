@@ -24,3 +24,7 @@
 .pagination a, .pagination button {
   display: inline-block;
 }
+.footer{
+  padding-top: 20rem;
+
+}
