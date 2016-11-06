@@ -24,4 +24,10 @@
   </tbody>
 </table>
 
-<a href="<%=@recipe.url%> "> <%= @recipe.url %></a>
+<p>
+  <a href="<%= @recipe.link%>" target="_blank"><%= "Link to Edamam Recipe" %></a>
+</p>
+
+<p>
+  <a href="<%=@recipe.url%> "> <%= "Link to Original Recipe" %></a>
+</p>
