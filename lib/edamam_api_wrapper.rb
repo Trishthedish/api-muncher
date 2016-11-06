@@ -36,13 +36,14 @@ class Edamam_Api_Wrapper
 
   def self.build_recipe(recipe)
     url = recipe["url"]
+    r_source = recipe["source"]
     link = recipe["shareAs"]
     name = recipe["label"]
     photo = recipe["image"]
     uri = recipe["uri"]
     ingredientLines = recipe["ingredientLines"]
 
-    Recipe.new(url, link, name, photo, uri, ingredientLines)
+    Recipe.new(url, r_source, link, name, photo, uri, ingredientLines)
   end
 
   # https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23recipe_637913ec61d9da69eb451818c3293df2
