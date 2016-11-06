@@ -13,6 +13,7 @@ class RecipesController < ApplicationController
 
   def search
     # what is better string or symbol?
+#you might be able take count
 
     @search_term = params[:query]
     @search_results = Edamam_Api_Wrapper.search_recipes(@search_term).paginate(:page => params[:page], :per_page => 10)
