@@ -15,8 +15,10 @@
         <div class="column">
         <%= form_tag show_recipes_path(search.uri), method: :get do %>
           <%= hidden_field_tag('url', 'search.url') %>
-          <%= hidden_field_tag('r_source', 'search.link')%>
-          <%= hidden_field_tag('source', 'search.r_source')%>
+          <%= hidden_field_tag('diet_labels', 'search.diet_labels')%>
+          <%= hidden_field_tag('health_labels', 'search.health_labels')%>
+
+          <%= hidden_field_tag('r_source', 'search.r_source')%>
 
           <%= hidden_field_tag('name', 'search.name')%>
           <%= hidden_field_tag('photo', 'search.photo')%>

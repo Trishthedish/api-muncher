@@ -24,6 +24,13 @@
   </tbody>
 </table>
 
+  <h3> Health Labels:
+    <% @recipe.diet_labels.each do |type| %>
+    <li><%=type %></li>
+    <% end %>
+  </h3>
+
+
 <p>
   <a href="<%= @recipe.link%>" target="_blank"><%= "Link to Edamam Recipe" %></a>
 </p>
