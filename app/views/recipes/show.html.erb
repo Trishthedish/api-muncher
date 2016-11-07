@@ -24,4 +24,76 @@
   </tbody>
 </table>
 
-<a href="<%=@recipe.url%> "> <%= @recipe.url %></a>
+<!-- # table dietary needs  -->
+<section class="row">
+  <div class="2-small 4-medium columns ">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <h3>Diet Labels: </h3>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <%@recipe.diet_labels.each do |type| %>
+        <td>
+          <%=type %>
+        </td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
+</div>
+</section>
+
+
+
+
+<!-- # table for health needs  -->
+<section class="row">
+<div class="2-small 4-medium columns">
+  <table>
+  <thead>
+    <tr>
+      <th>
+        <h3> Health Labels: </h3>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <%@recipe.health_labels.each do |line|%>
+      <td>
+        <%=line %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div></section>
+
+
+
+
+<!--
+  <h3> Health Labels:
+    <% @recipe.diet_labels.each do |type| %>
+    <li><%=type %></li>
+    <% end %>
+  </h3>
+
+<h3> Health Labels:
+  <% @recipe.health_labels.each do |line| %>
+  <li><%=line %></li>
+    <% end %>
+</h3> -->
+
+<p>
+  <a href="<%= @recipe.link%>" target="_blank"><%= "Link to Edamam Recipe" %></a>
+</p>
+
+<p>
+  <a href="<%=@recipe.url%> "> <%= "Link to Original Recipe from: #{@recipe.r_source }" %></a>
+</p>

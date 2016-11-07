@@ -1,14 +1,20 @@
 class Recipe
-  attr_reader :url, :name, :photo, :uri, :ingredientLines
+  attr_reader :uri, :name, :photo, :r_source, :url, :link, :diet_labels, :health_labels, :ingredientLines
 
-  def initialize(url, name, photo, uri, ingredientLines)
-    @url = url
+
+
+  def initialize(uri, name, photo, r_source, url, link, diet_labels, health_labels, ingredientLines)
+    @uri = uri
     @name = name
     @photo = photo
-    @uri = uri
+    @r_source = r_source
+    @url = url
+    @link = link
+    @diet_labels = diet_labels
+    @health_labels = health_labels
     @ingredientLines = ingredientLines
 
-    if url == nil || name == nil || photo == nil || uri = nil || ingredientLines == nil || url == "" || name == "" || photo == "" || uri = "" || ingredientLines == ""
+    if uri == nil || uri == "" || name = nil || name == "" || photo == nil || photo == "" || r_source == nil || r_source == "" || url == nil || url == "" || link == nil || link == "" || diet_labels == nil || diet_labels == "" || health_labels == nil || health_labels == "" || ingredientLines == nil || ingredientLines == ""
 
     end
 
