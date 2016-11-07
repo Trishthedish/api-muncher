@@ -35,20 +35,21 @@ class Edamam_Api_Wrapper
   private
 
   def self.build_recipe(recipe)
-    url = recipe["url"]
-    r_source = recipe["source"]
-    health_labels = recipe["healthLabels"]
-    diet_labels = recipe["dietLabels"]
-    link = recipe["shareAs"]
+    uri = recipe["uri"]
     name = recipe["label"]
     photo = recipe["image"]
-    uri = recipe["uri"]
+    r_source = recipe["source"]
+    url = recipe["url"]
+    link = recipe["shareAs"]
+    diet_labels = recipe["dietLabels"]
+    health_labels = recipe["healthLabels"]
+
     ingredientLines = recipe["ingredientLines"]
 
-    Recipe.new(url, r_source, diet_labels, health_labels, link, name, photo, uri, ingredientLines)
+    Recipe.new(uri, name, photo, r_source, url, link, diet_labels, health_labels, ingredientLines)
   end
-
-  # https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23recipe_637913ec61d9da69eb451818c3293df2
+ # @link=["Vegetarian", "Gluten-Free", "Egg-Free", "Peanut-Free", "Tree-Nut-Free", "Soy-Free", "Fish-Free", "Shellfish-Free"]
+ #  # https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23recipe_637913ec61d9da69eb451818c3293df2
 
 
 
