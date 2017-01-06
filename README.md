@@ -1,4 +1,4 @@
-## Code Reflection
+## Code Reflection 11.7.16
 
 ### What do you understand better after doing this project?
 - It wasn't clear prior to this project just how statelessness might affect my attempt to render code from various places in my views. I'm curious if there is a method that could easily be built to handle this? Like when we'd write a handy "to_s method" in our early #ruby #codinglife.
@@ -8,10 +8,9 @@
 - I'm currently holding on to and saving the data held in diet_lables and health_labels. Yet, I haven't truly done anything spectacular with that information.
 
 ### what did your trio do differently
-- I saw a far better use of Foundation implementation. I hope to spend more time with this later. 
+- I saw a far better use of Foundation implementation. I hope to spend more time with this later.
 
-
-
+***
 # Recipe API Consumer
 
 ## Learning Goals:

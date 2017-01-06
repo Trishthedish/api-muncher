@@ -48,14 +48,11 @@ class Edamam_Api_Wrapper
 
     Recipe.new(uri, name, photo, r_source, url, link, diet_labels, health_labels, ingredientLines)
   end
- # @link=["Vegetarian", "Gluten-Free", "Egg-Free", "Peanut-Free", "Tree-Nut-Free", "Soy-Free", "Fish-Free", "Shellfish-Free"]
- #  # https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23recipe_637913ec61d9da69eb451818c3293df2
 
 
+ # https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23recipe_637913ec61d9da69eb451818c3293df2
 
-
-   #
-  #  https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23recipe_637913ec61d9da69eb451818c3293df2
+# https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23recipe_637913ec61d9da69eb451818c3293df2
 
 
 # https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23 recipe_637913ec61d9da69eb451818c3293df2
